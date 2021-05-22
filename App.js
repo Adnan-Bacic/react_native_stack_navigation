@@ -9,7 +9,7 @@ const App = () => (
   <>
     <StatusBar />
     <View>
-      <Text>123</Text>
+      <Text>Stack navigation</Text>
     </View>
   </>
 );
