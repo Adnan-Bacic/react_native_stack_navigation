@@ -8,7 +8,7 @@ const Login = () => (
       <Button
         title="navigate to onboarding stack"
         onPress={() => {
-          console.log(1);
+         console.log(1)
         }}
       />
     </View>
