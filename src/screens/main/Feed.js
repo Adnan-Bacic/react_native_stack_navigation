@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
+import * as functions from '../../redux/functions';
 
 const Feed = () => (
   <>
@@ -7,8 +8,8 @@ const Feed = () => (
       <Text>main stack</Text>
       <Button
         title="navigate to auth stack"
-        onPress={() => {
-          console.log(1);
+        onPress={async () => {
+          await functions.auth.logoutUser();
         }}
       />
     </View>

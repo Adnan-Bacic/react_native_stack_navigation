@@ -4,10 +4,10 @@ import * as Screens from '../screens';
 
 const Stack = createStackNavigator();
 
-const LoginNavigator = () => (
+const AuthNavigator = () => (
   <Stack.Navigator>
     <Stack.Screen name="Login" component={Screens.Login} />
   </Stack.Navigator>
 );
 
-export default LoginNavigator;
+export default AuthNavigator;

@@ -1,5 +1,5 @@
-import * as stackNavigation from './stackNavigation';
+import * as auth from './auth';
 
 export {
-  stackNavigation,
+  auth,
 };
