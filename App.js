@@ -2,16 +2,13 @@ import 'react-native-gesture-handler';
 import React from 'react';
 import {
   StatusBar,
-  Text,
-  View,
 } from 'react-native';
+import Navigator from './src/navigation/Navigator';
 
 const App = () => (
   <>
     <StatusBar />
-    <View>
-      <Text>Stack navigation</Text>
-    </View>
+    <Navigator />
   </>
 );
 
