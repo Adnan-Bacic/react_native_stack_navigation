@@ -3,9 +3,7 @@ import * as stackNavigation from './stackNavigation';
 export const loginUser = async () => {
   // any logic you have to login user goes here
 
-  // in a real project, save that the onboarding is complete
   // backend should return some info about the user
-
   const user = {
     onboardingDone: false,
   };
@@ -20,6 +18,8 @@ export const loginUser = async () => {
 
 export const finishOnboarding = async () => {
   // any logic you need here
+
+  // if any stack should only be shown once, send info to backend that this stack is completed
 
   await stackNavigation.finishOnboarding();
 };
