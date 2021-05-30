@@ -5,6 +5,8 @@ import AuthNavigator from './AuthNavigator';
 import OnboardingNavigator from './OnboardingNavigator';
 import MainNavigator from './MainNavigator';
 import * as AsyncStorage from '../AsyncStorage/AsyncStorage';
+import store from '../redux/configureStore';
+import * as actions from '../redux/actions';
 
 const Navigator = () => {
   const [stack, setStack] = useState('');
@@ -25,6 +27,7 @@ const Navigator = () => {
       if (loginDone === 'true' && onboardingDone === null) {
         setStack(stacks.onboarding);
       } else if (loginDone === 'true' && onboardingDone === 'true') {
+        store.dispatch(actions.navigator.setLoggedInDoneTrue());
         setStack(stacks.main);
       } else {
         setStack(stacks.auth);
