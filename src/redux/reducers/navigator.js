@@ -21,7 +21,7 @@ export const navigatorReducer = (state = defaultState, action) => {
 
       /*
       since this would be the sign out functionality, we reset the store in the rootReducer
-    case types.SET_AUTHSTATUS_NULL:
+    case types.SET_AUTH_STATUS_NULL:
       return {
         ...state,
         authStatus: null,
